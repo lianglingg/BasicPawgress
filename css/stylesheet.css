@@ -123,6 +123,7 @@ nav li {
 main {
     width: 70vw;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -229,7 +230,7 @@ p {
     display: flex;
     align-items: flex-start;
     padding: 1rem 0;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .quote-hero {
@@ -240,15 +241,15 @@ p {
 }
 
 .circle-bg {
-    position: relative;
+    position: absolute;
     width: 70vw;
     height: 70vw;
-    position: absolute;
     background-color: var(--acc-col2);
     border-radius: 9999px;
     z-index: 0;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 1rem auto;
-    overflow: hidden;
 }
 
 .quote-text {
@@ -257,6 +258,7 @@ p {
     text-align: left;
     top: 10rem;
     right: 30vw;
+    z-index: 1;
 }
 
 .quote-text h2 {
@@ -269,6 +271,7 @@ p {
     top: -8vw;
     right: 15vw;
     width: 70vw;
+    z-index: 2;
 }
 
 .cta-bone {
@@ -663,23 +666,26 @@ footer {
     .circle-bg{
         height: 90vw;
         width: 90vw;
-        margin: -3.5rem 0;
+        margin: -3.5rem auto;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .quote-hero-dog {
         height: auto;
         position: relative;
         bottom: 0;
+        right: 0;
         width: 90vw;
+        margin: 0 auto;
     }
 
     .quote-text {
-        width: 45vw;
-        position: relative;
+        width: 70vw;
+        position: absolute;
         text-align: left;
         top: 1rem;
-        right: 65vw;
-
+        left: 5vw;
     }
 
     .quote-text h2 {
@@ -818,15 +824,15 @@ footer {
         width: 90vw;
         top: -5rem;
         left: 50%;
-        transform: translateX(-50%)
+        transform: translateX(-50%);
     }
 
     .quote-hero-dog {
         height: auto;
         position: relative;
         bottom: 0;
-        width: 90vw;
         right: 5vw;
+        width: 90vw;
     }
 
     .quote-text {
@@ -860,7 +866,7 @@ footer {
 
     .body-left img {
         margin: -2rem;
-        transform: rotate(-15deg);
+        transform: rotate(-15deg);;
     }
 
     .instructions-right, .instructions-left {
