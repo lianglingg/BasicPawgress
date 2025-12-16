@@ -247,7 +247,7 @@ p {
     background-color: var(--acc-col2);
     border-radius: 9999px;
     z-index: 0;
-    margin: 1rem 19vw;
+    margin: 1rem auto;
     overflow: hidden;
 }
 
